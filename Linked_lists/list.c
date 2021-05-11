@@ -87,7 +87,9 @@ void list_init(List *list, void (*destroy)(void *data))
 }
 */
 
-/* list_ins_next */
+/* 
+ * list_ins_next() *
+ */
 int list_ins_next(List *list, ListElmt *element, const void *data) {
     ListElmt *new_element;
 
@@ -122,11 +124,17 @@ int list_ins_next(List *list, ListElmt *element, const void *data) {
     list->size++;
 
     return 0;
-
-
 }
 
-
+/*
+ * list_rem_next()
+ */
+int list_rem_next(List* list, ListElmt* element, void** data) {
+    // remove head
+    if (element == NULL) {
+        *data = list_data(list_head(list));
+    }
+}
 
 
 
