@@ -101,7 +101,6 @@ int list_ins_next(List *list, ListElmt *element, const void *data) {
 
     // setup new element
     new_element->data = (void *)data;
-    printf("data in insert(): %d\n", *(int *)(data));
     // case 1: element is NULL
     if (element == NULL) {
        
@@ -130,10 +129,49 @@ int list_ins_next(List *list, ListElmt *element, const void *data) {
  * list_rem_next()
  */
 int list_rem_next(List* list, ListElmt* element, void** data) {
+    
+    ListElmt* old_element;
+    // don't allow removal from empty list
+    if (list_size(list) == 0) {
+        return -1;
+    }
+
     // remove head
     if (element == NULL) {
-        *data = list_data(list_head(list));
+        *data = list->head->data;
+        old_element = list->head;
+        list->head = list->head->next; 
+
+        // list is size 1, therefore head == tail
+        if (list_size(list) == 1) {
+            list->tail = NULL; 
+        }
     }
+
+    // middle or end node
+    else {
+        // can't remove non-existant node
+        if (element->next == NULL) {
+            return -1;
+        }
+
+        *data = element->next->data;
+        old_element = element->next;
+        element->next = element->next->next;
+
+        // new tail
+        if (element->next == NULL) {
+            list->tail = element;
+        }
+    }
+
+    // free allocated space of removed node
+    free(old_element);
+
+    list->size -= 1;
+
+    return 0;
+    
 }
 
 
@@ -147,19 +185,27 @@ int main() {
     ListElmt e;
     int *data ;
     int i;
-
+    
+    printf("Testing list_ins_next()\n");
     for (i = 10; i > 0; i--) {
 
        if ((data = (int *)malloc(sizeof(int))) == NULL)
            return 1;
+        *data = i;
 
-   *data = i;
-
-   if (list_ins_next(&list, NULL, data) != 0)
-      return 1;
+    if (list_ins_next(&list, NULL, data) != 0)
+       return 1;
 
     }
     print_list(&list);
+
+    printf("Testing list_rem_next()\n - removing head (001), middle (005), and tail(10)\n");
+    ListElmt* n1 = list_head(&list);
+    ListElmt* n2 = n1->next->next->next;
+    list_rem_next(&list, NULL,(void**) &data);
+    list_rem_next(&list, n2, (void**) &data);
+    print_list(&list); 
+
 }
 
 
