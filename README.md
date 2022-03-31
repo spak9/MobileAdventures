@@ -1,7 +1,6 @@
-# Binary Analysis
+# Binary Adventures
 
-The repo is named "CImplementations", but this is really a playground trying to learn more about "native" code and 
-binary analysis. This README will be used to note useful links I find.
+This repo serves as a playground for learning more about binary analysis, in particular, ARM binaries!
 
 ## Links
 
