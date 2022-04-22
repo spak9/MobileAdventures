@@ -3,22 +3,11 @@
 This repo serves as a playground for learning more about binary analysis, in particular, ARM binaries!
 
 
-## Cross-compilation and execution
-- qemu-user-static for executing statically linked aarch64 binaries on x86-64
-- qemu-user for executing dynamically linked aarch64 binaries on x86-64
+## frida
 
-- Example for executing aarch64 statically linked binary:
-`./<executable_name`
-
-- Example for executing aarch64 dynamically linked binary:
-`qemu-aarch64 -L /usr/aarch64-linux-gnu ./<executable_name>`
-
-- Example for compiling statically linked 32-bit ARM
-`arm-linux-gnueabihf-gcc -static -o <executable_name> <source_file>.c`
-
-- Example for compiling dynamically linked 32-bit ARM
-`arm-linux-gnueabihf-gcc -o <executable_name> <source_file>.c`
-`qemu-arm -L /usr/arm-linux-gnueabihf <executable_name>`
+The `frida` directory will be main workplace for 64-bit ARM-related hooking items.
+My vision is to make it into some sort of "manual" where there will be tid-bits 
+of my thoughts and experiments, each of which being broken down into pieces.
 
 ## Links
 
