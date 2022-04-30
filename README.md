@@ -5,7 +5,7 @@ This repo serves as a playground for learning more about binary analysis, in par
 
 ## frida
 
-The `frida` directory will be main workplace for 64-bit ARM-related hooking items.
+The `frida` directory will be my main workplace for 64-bit ARM-related hooking items.
 My vision is to make it into some sort of "manual" where there will be tid-bits 
 of my thoughts and experiments, each of which being broken down into pieces.
 
