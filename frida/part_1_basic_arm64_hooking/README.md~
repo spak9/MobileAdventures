@@ -32,7 +32,6 @@ with `retval` being a `NativePointer` of the return value, if any.
 
 
 Firstly, we need a `NativePointer` that can be our target for hooking, but how exactly do we get that?
-
 I like to think of the `Module` object as a object representing a 
 typical shared object/executable (from the ELF perspective). 
 There are 2 main ways I like to get hold of `Module` objects:

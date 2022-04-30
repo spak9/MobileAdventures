@@ -32,6 +32,10 @@ with `retval` being a `NativePointer` of the return value, if any.
 
 
 Firstly, we need a `NativePointer` that can be our target for hooking, but how exactly do we get that?
+A `NativePointer` is exactly what it sounds like, it's a pointer class, in which an instance is a 
+variable whose value is a memory address. That means we need a `NativePointer` whose value contains
+the memory address of the function we'd like to hook! In order to find that memory address, we need to 
+learn about the `Module` API.
 
 I like to think of the `Module` object as a object representing a 
 typical shared object/executable (from the ELF perspective). 
