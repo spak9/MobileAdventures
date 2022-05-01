@@ -33,7 +33,7 @@ with `retval` being a `NativePointer` of the return value, if any.
 
 Firstly, we need a `NativePointer` that can be our target for hooking, but how exactly do we get that?
 A `NativePointer` is exactly what it sounds like, it's a pointer class, in which an instance is a 
-variable whose value is a memory address. That means we need a `NativePointer` whose value contains
+variable whose value is a memory address. That means we need a `NativePointer` whose value is
 the memory address of the function we'd like to hook! In order to find that memory address, we need to 
 learn about the `Module` API.
 
@@ -74,4 +74,5 @@ then attempt to find the symbol/export's address (NativePointer). We
 can then pass that into `Interceptor.attach(target, ..)`.
 
 ## Example Code
+The `basic_function.c` file is a 
 
