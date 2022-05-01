@@ -41,18 +41,21 @@ I like to think of the `Module` object as a object representing a
 typical shared object/executable (from the ELF perspective). 
 There are 2 main ways I like to get hold of `Module` objects:
 1. `Process.enumerateModules()` which returns an array of `Module` objects
-that are loaded in the process. For example, all the shared objects a process is using.
+that are loaded in the process. Bascially all the shared objects a process is using.
 2. `Process.findModuleByName/Address(name_or_address)` which returns a
 `Module` instance or null if not available. 
 `Module`s have attributes like `name`, `size(bytes)`, and most importantly,
 the `address`, which is a `NativePointer` of the base address of the module.
-EX:
+For example, the following commands will exemplify the process of finding 
+the `Module` you're interested in.
 ```
-[Local::extern_out ]-> extern_out
+frida a.out
+<frida header commandline stuff...>
+[Local::a.out ]-> Process.findModuleByName("a.out")
 {
-    "base": "0x5577880000",
-    "name": "extern_out",
-    "path": "/home/steven/Desktop/code/C/extern_out",
+    "base": "0x55890b0000",
+    "name": "a.out",
+    "path": "/home/steven/Desktop/code/BinaryAdventures/frida/part_1_basic_arm64_hooking/a.out",
     "size": 73728
 }
 ```
@@ -65,6 +68,10 @@ the specified data objects from the Module, all of which contain an
 functions/variables and other symbols (if not stripped) and their addresses 
 in memory, in which we can then hook into! 
 
-Coming full circle, you examine the `Module` you're interested,
+Coming full circle, you examine the `Module`, which the typically the actual executable
+or some type of shared object you're interested,
 then attempt to find the symbol/export's address (NativePointer). We
 can then pass that into `Interceptor.attach(target, ..)`.
+
+## Example Code
+
