@@ -74,5 +74,4 @@ then attempt to find the symbol/export's address (NativePointer). We
 can then pass that into `Interceptor.attach(target, ..)`.
 
 ## Example Code
-The `basic_function.c` file is a 
 
