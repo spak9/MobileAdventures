@@ -2,7 +2,7 @@
 
 This repo originally served as a playground for learning more about actual "binary" (executable) analysis,
 but has definitely outgrown that original purpose, and now includes really anything related to 
-actual binary "stuff"!
+actual security "stuff"!
 
 
 ## frida
