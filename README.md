@@ -2,7 +2,7 @@
 
 This repo originally served as a playground for learning more about actual "binary" (executable) analysis,
 but has definitely outgrown that original purpose, and now includes really anything related to 
-actual binary "stuff"!
+actual security "stuff"!
 
 
 ## frida
@@ -13,7 +13,8 @@ of my thoughts and experiments, each of which being broken down into pieces.
 The current setup for testing is:
 1. Raspberry Pi 4 - Raspberry Pi OS 64-bit
 2. Motorola G5s Plus Android 8.1
-3. iPhone 8 iOS 8
+3. iPhone 8 iOS 16.2 (palera1n)
+4. MacBook Pro 2022 16in
 
 ## Protocol Analysis
 The `protocol_analysis` directory will include any work that has to do with analyzing 
