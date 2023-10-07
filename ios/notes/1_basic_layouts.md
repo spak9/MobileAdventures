@@ -1,5 +1,7 @@
 # Basic Layouts
 
+## MVC
+
 Like many UI toolkits/frameworks, iOS seems to also be heavily based on a MVC-like pattern.
 The goal here is the keep things modular and abstracted from other parts, therefore
 models, views, and controllers have a separation of concerns.
@@ -37,3 +39,21 @@ class ViewController: UIViewController {
 		counter.text = "blah"
 	}
 }
+```
+
+## Views
+`View`s are building blocks of your application's UI. They define a rectangular space and do some of the following:
+
+1. Draws and animate --> Define content like text or color within the bounds
+2. Handles layout --> Defines stricter rules for how the UI should be laid out and viewed, which can also
+	include other views via a parent/child relationship (super/sub view).
+3. Respond --> UIView implements the `UIResponder` interface, which is the mechanism for handling and responding
+		to events. `UIKit` also handles the UI Responder chain, which forwards the event to the next appropriate view
+		if the current responder doesn't know how to handle X event.
+
+There are also different categories of views:
+1. UIWindow - defines surface of which all other subviews draw. The root view
+2. ContainerViews - container other views with unique functionality, stack, scroll, etc..
+3. Display
+4. Controls - Similar to form controls like buttons, sliders, radio, etc..
+5. Navigation
