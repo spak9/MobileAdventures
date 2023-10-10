@@ -8,8 +8,10 @@ An `ELF` file is a common file format for:
 It is typically the output of the compilation and linking process and it contains all the information
 an operating system + loader needs in order to *load and run the actual program*.
 The file format consists of 3 major pieces:
+
 1. ELF Header -- global attributes of program (arch, endianness, etc), entry point, and various sizes and pointers.
-2. 
+2. ELF Program headers -- describes to the loader how to bring the binary into memory efficiently.
+3. ELF Section headers --
 
 
 ## cmd
@@ -45,4 +47,14 @@ Note that the `-c` flag is the assembling flag and does NOT do the final linking
 The input of linking are object files or shared libraries, and the output is an .. TBD
 
 1. ARM Mach-O 
-TBD
+```
+ld -o HelloWorld HelloWorld.o \
+	-lSystem \
+	-syslibroot `xcrun -sdk macosx --show-sdk-path` \
+	-arch arm64
+```
+
+2. ARM ELF
+```
+/opt/homebrew/opt/llvm/bin/ld.lld HelloWorld_elf.o -o HelloWorld_elf
+```
