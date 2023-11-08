@@ -4,7 +4,8 @@
 
 // Setup the parameters to print hello world
 // and then call the Kernel to do it.
-_main: mov	X0, #1		// 1 = StdOut
+_main: 
+	mov	X0, #1		// 1 = StdOut
 	adr	X1, helloworld 	// string to print
 	mov	X2, #13	    	// length of our string
 	mov	X16, #4		// Unix write system call

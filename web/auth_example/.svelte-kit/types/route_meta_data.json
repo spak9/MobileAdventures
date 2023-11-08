@@ -1,0 +1,13 @@
+{
+	"/": [
+		"src/routes/+layout.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/account": [
+		"src/routes/account/+page.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/api": [
+		"src/routes/api/+server.js"
+	]
+}
