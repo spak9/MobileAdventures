@@ -1,4 +1,4 @@
-# ELF Basics
+# Compiling Basics
 
 An `ELF` file is a common file format for:
 - executable files
