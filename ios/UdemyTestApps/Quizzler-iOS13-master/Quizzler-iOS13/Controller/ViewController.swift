@@ -23,12 +23,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-         
         let userAnswer = sender.currentTitle!
         let wasCorrect = quizBrain.checkAnswer(userAnswer: userAnswer)
         quizBrain.questionIndex += 1
         updateUI()
-        
     }
     
     func updateUI() {

@@ -7,35 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79C6B40C2C06440400481091 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6B40B2C06440400481091 /* WeatherData.swift */; };
-		79C6B40E2C06542000481091 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6B40D2C06542000481091 /* WeatherModel.swift */; };
-		79DB76D72C05197500111818 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB76D62C05197500111818 /* WeatherManager.swift */; };
-		ADAA27B1231BBFAF00365194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA27B0231BBFAF00365194 /* AppDelegate.swift */; };
-		ADAA27B3231BBFAF00365194 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA27B2231BBFAF00365194 /* SceneDelegate.swift */; };
-		ADAA27B5231BBFAF00365194 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA27B4231BBFAF00365194 /* WeatherViewController.swift */; };
-		ADAA27B8231BBFAF00365194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAA27B6231BBFAF00365194 /* Main.storyboard */; };
-		ADAA27BA231BBFB300365194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAA27B9231BBFB300365194 /* Assets.xcassets */; };
-		ADAA27BD231BBFB300365194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAA27BB231BBFB300365194 /* LaunchScreen.storyboard */; };
-		ADAA27CE231BC87F00365194 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADAA27CD231BC87F00365194 /* README.md */; };
+		798B98802BFD92EA007EC580 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B987F2BFD92EA007EC580 /* SecondViewController.swift */; };
+		79AF82822BFE441000AF748C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AF82812BFE441000AF748C /* ResultsViewController.swift */; };
+		AD0B9F7A230D61800065EFD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B9F79230D61800065EFD9 /* AppDelegate.swift */; };
+		AD0B9F7C230D61800065EFD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B9F7B230D61800065EFD9 /* SceneDelegate.swift */; };
+		AD0B9F7E230D61800065EFD9 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B9F7D230D61800065EFD9 /* CalculateViewController.swift */; };
+		AD0B9F81230D61800065EFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0B9F7F230D61800065EFD9 /* Main.storyboard */; };
+		AD0B9F83230D61840065EFD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0B9F82230D61840065EFD9 /* Assets.xcassets */; };
+		AD0B9F86230D61840065EFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0B9F84230D61840065EFD9 /* LaunchScreen.storyboard */; };
+		AD64359A2312D0BC00E22B00 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD6435992312D0BC00E22B00 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		79C6B40B2C06440400481091 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = SOURCE_ROOT; };
-		79C6B40D2C06542000481091 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = SOURCE_ROOT; };
-		79DB76D62C05197500111818 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = SOURCE_ROOT; };
-		ADAA27AD231BBFAF00365194 /* Clima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clima.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADAA27B0231BBFAF00365194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADAA27B2231BBFAF00365194 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADAA27B4231BBFAF00365194 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
-		ADAA27B7231BBFAF00365194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ADAA27B9231BBFB300365194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ADAA27BC231BBFB300365194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ADAA27BE231BBFB300365194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADAA27CD231BC87F00365194 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		798B987F2BFD92EA007EC580 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		79AF82812BFE441000AF748C /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		AD0B9F76230D61800065EFD9 /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0B9F79230D61800065EFD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD0B9F7B230D61800065EFD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AD0B9F7D230D61800065EFD9 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		AD0B9F80230D61800065EFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD0B9F82230D61840065EFD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD0B9F85230D61840065EFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD0B9F87230D61840065EFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6435992312D0BC00E22B00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ADAA27AA231BBFAF00365194 /* Frameworks */ = {
+		AD0B9F73230D61800065EFD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,100 +43,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ADAA27A4231BBFAF00365194 = {
+		AD0B9F6D230D61800065EFD9 = {
 			isa = PBXGroup;
 			children = (
-				ADAA27CD231BC87F00365194 /* README.md */,
-				ADAA27AF231BBFAF00365194 /* Clima */,
-				ADAA27AE231BBFAF00365194 /* Products */,
+				AD6435992312D0BC00E22B00 /* README.md */,
+				AD0B9F78230D61800065EFD9 /* BMI Calculator */,
+				AD0B9F77230D61800065EFD9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ADAA27AE231BBFAF00365194 /* Products */ = {
+		AD0B9F77230D61800065EFD9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADAA27AD231BBFAF00365194 /* Clima.app */,
+				AD0B9F76230D61800065EFD9 /* BMI Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADAA27AF231BBFAF00365194 /* Clima */ = {
+		AD0B9F78230D61800065EFD9 /* BMI Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				ADAA27B0231BBFAF00365194 /* AppDelegate.swift */,
-				ADAA27B2231BBFAF00365194 /* SceneDelegate.swift */,
-				ADAA27CA231BC3FA00365194 /* Model */,
-				ADAA27C9231BC3F200365194 /* View */,
-				ADAA27C8231BC3E500365194 /* Controller */,
-				ADAA27B9231BBFB300365194 /* Assets.xcassets */,
-				ADAA27BB231BBFB300365194 /* LaunchScreen.storyboard */,
-				ADAA27BE231BBFB300365194 /* Info.plist */,
+				AD0B9F79230D61800065EFD9 /* AppDelegate.swift */,
+				AD0B9F7B230D61800065EFD9 /* SceneDelegate.swift */,
+				AD0B9F8F230D63EA0065EFD9 /* Models */,
+				AD0B9F8E230D63E10065EFD9 /* Views */,
+				AD0B9F8D230D63D70065EFD9 /* Controllers */,
+				AD0B9F82230D61840065EFD9 /* Assets.xcassets */,
+				AD0B9F84230D61840065EFD9 /* LaunchScreen.storyboard */,
+				AD0B9F87230D61840065EFD9 /* Info.plist */,
 			);
-			path = Clima;
+			path = "BMI Calculator";
 			sourceTree = "<group>";
 		};
-		ADAA27C8231BC3E500365194 /* Controller */ = {
+		AD0B9F8D230D63D70065EFD9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				ADAA27B4231BBFAF00365194 /* WeatherViewController.swift */,
+				AD0B9F7D230D61800065EFD9 /* CalculateViewController.swift */,
+				798B987F2BFD92EA007EC580 /* SecondViewController.swift */,
+				79AF82812BFE441000AF748C /* ResultsViewController.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		ADAA27C9231BC3F200365194 /* View */ = {
+		AD0B9F8E230D63E10065EFD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ADAA27B6231BBFAF00365194 /* Main.storyboard */,
+				AD0B9F7F230D61800065EFD9 /* Main.storyboard */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		ADAA27CA231BC3FA00365194 /* Model */ = {
+		AD0B9F8F230D63EA0065EFD9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				79DB76D62C05197500111818 /* WeatherManager.swift */,
-				79C6B40B2C06440400481091 /* WeatherData.swift */,
-				79C6B40D2C06542000481091 /* WeatherModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ADAA27AC231BBFAF00365194 /* Clima */ = {
+		AD0B9F75230D61800065EFD9 /* BMI Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADAA27C1231BBFB300365194 /* Build configuration list for PBXNativeTarget "Clima" */;
+			buildConfigurationList = AD0B9F8A230D61840065EFD9 /* Build configuration list for PBXNativeTarget "BMI Calculator" */;
 			buildPhases = (
-				ADAA27A9231BBFAF00365194 /* Sources */,
-				ADAA27AA231BBFAF00365194 /* Frameworks */,
-				ADAA27AB231BBFAF00365194 /* Resources */,
+				AD0B9F72230D61800065EFD9 /* Sources */,
+				AD0B9F73230D61800065EFD9 /* Frameworks */,
+				AD0B9F74230D61800065EFD9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Clima;
-			productName = Clima;
-			productReference = ADAA27AD231BBFAF00365194 /* Clima.app */;
+			name = "BMI Calculator";
+			productName = "BMI Calculator";
+			productReference = AD0B9F76230D61800065EFD9 /* BMI Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ADAA27A5231BBFAF00365194 /* Project object */ = {
+		AD0B9F6E230D61800065EFD9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = "App Brewery";
+				ORGANIZATIONNAME = "Angela Yu";
 				TargetAttributes = {
-					ADAA27AC231BBFAF00365194 = {
+					AD0B9F75230D61800065EFD9 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = ADAA27A8231BBFAF00365194 /* Build configuration list for PBXProject "Clima" */;
+			buildConfigurationList = AD0B9F71230D61800065EFD9 /* Build configuration list for PBXProject "BMI Calculator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,59 +143,58 @@
 				en,
 				Base,
 			);
-			mainGroup = ADAA27A4231BBFAF00365194;
-			productRefGroup = ADAA27AE231BBFAF00365194 /* Products */;
+			mainGroup = AD0B9F6D230D61800065EFD9;
+			productRefGroup = AD0B9F77230D61800065EFD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADAA27AC231BBFAF00365194 /* Clima */,
+				AD0B9F75230D61800065EFD9 /* BMI Calculator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ADAA27AB231BBFAF00365194 /* Resources */ = {
+		AD0B9F74230D61800065EFD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADAA27CE231BC87F00365194 /* README.md in Resources */,
-				ADAA27BD231BBFB300365194 /* LaunchScreen.storyboard in Resources */,
-				ADAA27BA231BBFB300365194 /* Assets.xcassets in Resources */,
-				ADAA27B8231BBFAF00365194 /* Main.storyboard in Resources */,
+				AD0B9F86230D61840065EFD9 /* LaunchScreen.storyboard in Resources */,
+				AD0B9F83230D61840065EFD9 /* Assets.xcassets in Resources */,
+				AD64359A2312D0BC00E22B00 /* README.md in Resources */,
+				AD0B9F81230D61800065EFD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ADAA27A9231BBFAF00365194 /* Sources */ = {
+		AD0B9F72230D61800065EFD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADAA27B5231BBFAF00365194 /* WeatherViewController.swift in Sources */,
-				ADAA27B1231BBFAF00365194 /* AppDelegate.swift in Sources */,
-				79DB76D72C05197500111818 /* WeatherManager.swift in Sources */,
-				79C6B40C2C06440400481091 /* WeatherData.swift in Sources */,
-				79C6B40E2C06542000481091 /* WeatherModel.swift in Sources */,
-				ADAA27B3231BBFAF00365194 /* SceneDelegate.swift in Sources */,
+				798B98802BFD92EA007EC580 /* SecondViewController.swift in Sources */,
+				AD0B9F7E230D61800065EFD9 /* CalculateViewController.swift in Sources */,
+				AD0B9F7A230D61800065EFD9 /* AppDelegate.swift in Sources */,
+				79AF82822BFE441000AF748C /* ResultsViewController.swift in Sources */,
+				AD0B9F7C230D61800065EFD9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ADAA27B6231BBFAF00365194 /* Main.storyboard */ = {
+		AD0B9F7F230D61800065EFD9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ADAA27B7231BBFAF00365194 /* Base */,
+				AD0B9F80230D61800065EFD9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		ADAA27BB231BBFB300365194 /* LaunchScreen.storyboard */ = {
+		AD0B9F84230D61840065EFD9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ADAA27BC231BBFB300365194 /* Base */,
+				AD0B9F85230D61840065EFD9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -206,7 +202,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ADAA27BF231BBFB300365194 /* Debug */ = {
+		AD0B9F88230D61840065EFD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +262,7 @@
 			};
 			name = Debug;
 		};
-		ADAA27C0231BBFB300365194 /* Release */ = {
+		AD0B9F89230D61840065EFD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -320,34 +316,34 @@
 			};
 			name = Release;
 		};
-		ADAA27C2231BBFB300365194 /* Debug */ = {
+		AD0B9F8B230D61840065EFD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Clima/Info.plist;
+				INFOPLIST_FILE = "BMI Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.appbrewery.Clima;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.appbrewery.BMI-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		ADAA27C3231BBFB300365194 /* Release */ = {
+		AD0B9F8C230D61840065EFD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Clima/Info.plist;
+				INFOPLIST_FILE = "BMI Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.appbrewery.Clima;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.appbrewery.BMI-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,25 +353,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADAA27A8231BBFAF00365194 /* Build configuration list for PBXProject "Clima" */ = {
+		AD0B9F71230D61800065EFD9 /* Build configuration list for PBXProject "BMI Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADAA27BF231BBFB300365194 /* Debug */,
-				ADAA27C0231BBFB300365194 /* Release */,
+				AD0B9F88230D61840065EFD9 /* Debug */,
+				AD0B9F89230D61840065EFD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADAA27C1231BBFB300365194 /* Build configuration list for PBXNativeTarget "Clima" */ = {
+		AD0B9F8A230D61840065EFD9 /* Build configuration list for PBXNativeTarget "BMI Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADAA27C2231BBFB300365194 /* Debug */,
-				ADAA27C3231BBFB300365194 /* Release */,
+				AD0B9F8B230D61840065EFD9 /* Debug */,
+				AD0B9F8C230D61840065EFD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ADAA27A5231BBFAF00365194 /* Project object */;
+	rootObject = AD0B9F6E230D61800065EFD9 /* Project object */;
 }
