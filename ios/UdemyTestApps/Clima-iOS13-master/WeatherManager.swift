@@ -27,7 +27,7 @@ struct WeatherManager {
     }
     
     func fetchTest() {
-        performRequest(urlString: "http://expired.badssl.com/")
+        performRequest(urlString: "https://sha256.badssl.com/")
     }
     
     func performRequest(urlString: String) {
@@ -55,7 +55,7 @@ struct WeatherManager {
                 }
                 else {
                     if let safeData = data {
-                        print("HERE: \(String(data: safeData, encoding: String.Encoding.utf8))")
+                        print("HERE: \(String(data: safeData, encoding: String.Encoding.utf8)!)")
                     }
                     
                 }
