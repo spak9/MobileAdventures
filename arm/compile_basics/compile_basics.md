@@ -15,7 +15,6 @@ The file format consists of 3 major pieces:
 
 
 ## cmd
-
 It should be noted that the `as` assembler and the `gcc` compiler both
 revert to MacOS's `clang` tools.
 MacOS outputs Mach-O files, but at the time of writing, I wanted to 
