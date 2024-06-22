@@ -13,7 +13,6 @@ The file format consists of 3 major pieces:
 2. ELF Program headers -- describes to the loader how to bring the binary into memory efficiently.
 3. ELF Section headers --
 
-
 ## cmd
 It should be noted that the `as` assembler and the `gcc` compiler both
 revert to MacOS's `clang` tools.
